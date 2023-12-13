@@ -17,12 +17,15 @@ body{
     border: 1px solid white;
     border-radius: 30px;
     padding: 20px;
+    margin-top: 5%;
 }
 
 header{
     text-align: center;
     color: white;
     font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .addNew{
@@ -35,12 +38,23 @@ header{
     border-radius: 20px;
 }
 
+.todos{
+    color: white;
+    margin: 3% 0;
+}
+
 .fa-plus{
     background-color: rgb(89, 77, 77);
     padding: 3px;
     border-radius: 5px;
     color: white;
 }
+
+/* .todosArea{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+} */
 
 .task{
     width: 100%;
@@ -49,6 +63,7 @@ header{
     padding: 15px;
     border-radius: 10px;
     background-color: white;
+    margin-bottom: 15px;
 }
 
 .taskHeader{
