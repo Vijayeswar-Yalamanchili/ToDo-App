@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: radial-gradient(circle at bottom right, rgb(3, 147, 184) 0%, rgb(3, 147, 184) 4%,rgb(15, 135, 193) 4%, rgb(15, 135, 193) 8%,rgb(28, 122, 201) 8%, rgb(28, 122, 201) 12%,rgb(40, 110, 210) 12%, rgb(40, 110, 210) 16%,rgb(53, 97, 219) 16%, rgb(53, 97, 219) 20%,rgb(65, 85, 228) 20%, rgb(65, 85, 228) 24%,rgb(78, 72, 236) 24%, rgb(78, 72, 236) 28%,rgb(90, 60, 245) 28%, rgb(90, 60, 245) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    width: 400px;
+    height: 500px;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+header{
+    text-align: center;
+    color: white;
+    font-size: 1.8em;
+}
+
+.addNew{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+.fa-plus{
+    background-color: rgb(89, 77, 77);
+    padding: 3px;
+    border-radius: 5px;
+    color: white;
+}
+
+.task{
+    width: 100%;
+    min-height: 75px;
+    height: max-content;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.taskHeader{
+    justify-content: space-between;
+}
+
+.taskHeader, .taskData{
+    display: flex;
+    width: 100%;
+}
+
+.taskText{
+    width: 80%;
+}
+
+.options{
+    width: 20%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fa-pen-to-square{
+    color: gray;
+}
+
+.fa-trash-can{
+    color: red;
+}
