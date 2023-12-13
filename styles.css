@@ -21,10 +21,9 @@ body{
 }
 
 header{
-    text-align: center;
     color: white;
     font-size: 1.8em;
-    font-weight: 600;
+    /* font-weight: 600; */
     margin-bottom: 10px;
 }
 
@@ -36,6 +35,7 @@ header{
     color: black;
     padding: 5px 20px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .todos{
@@ -50,11 +50,10 @@ header{
     color: white;
 }
 
-/* .todosArea{
-    height: auto;
-    display: flex;
-    flex-direction: column;
-} */
+.todosArea{
+    display: grid;
+    gap: 5%;
+}
 
 .task{
     width: 100%;
@@ -63,7 +62,6 @@ header{
     padding: 15px;
     border-radius: 10px;
     background-color: white;
-    margin-bottom: 15px;
 }
 
 .taskHeader{
@@ -84,6 +82,7 @@ header{
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .fa-pen-to-square{
@@ -93,3 +92,11 @@ header{
 .fa-trash-can{
     color: red;
 }
+
+.modalTitle{
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+/* #textData{
+    height: max-content;
+} */
