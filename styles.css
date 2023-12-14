@@ -50,14 +50,14 @@ header{
     color: white;
 }
 
-.todosArea{
+.tasks{
     display: grid;
     gap: 3%;
     overflow-y: scroll;
     height: 320px;
 }
 
-.todosArea::-webkit-scrollbar{
+.tasks::-webkit-scrollbar{
     width: 0 !important;
 }
 
@@ -67,8 +67,7 @@ header{
     height: max-content;
     padding: 15px;
     border-radius: 10px;
-    background-color: white;
-    
+    background-color: white;    
 }
 
 .taskHeader{
