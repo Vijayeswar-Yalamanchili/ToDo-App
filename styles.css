@@ -9,6 +9,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    /* overflow: hidden; */
 }
 
 .main{
@@ -18,6 +19,12 @@ body{
     border-radius: 30px;
     padding: 20px;
     margin-top: 5%;
+    overflow: hidden;
+    /* overflow-y: scroll; */
+}
+
+.main::-webkit-scrollbar{
+    width: 0 !important;
 }
 
 header{
@@ -52,7 +59,13 @@ header{
 
 .todosArea{
     display: grid;
-    gap: 5%;
+    gap: 3%;
+    overflow-y: scroll;
+    height: 320px;
+}
+
+.todosArea::-webkit-scrollbar{
+width: 0 !important;
 }
 
 .task{
@@ -62,6 +75,7 @@ header{
     padding: 15px;
     border-radius: 10px;
     background-color: white;
+    
 }
 
 .taskHeader{
