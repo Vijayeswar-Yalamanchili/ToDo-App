@@ -1,52 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToDo App</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO App</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/1/1560.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <h3 class="text-center mb-3 fw-bolder">TODO App</h3>
+      <div id="addnew" data-bs-toggle="modal" data-bs-target="#form">
+        <span class="fw-bolder">Add New TODO</span>
+        <i class="fa-solid fa-plus"></i>
+      </div>
 
-    <div class="main">
-        <header class="text-center fw-bold">Todo App</header>
-        <div class="addNew" data-bs-toggle="modal" data-bs-target="#form">
-            <span >Add new todo</span><i class="fa-regular fa-plus"></i>
-        </div>
-
-        <!-- Modal -->
-        <form class="modal fade" id="form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p class=" fw-bold">Todo Title</p>
-                        <input type="text" class="form-control" id="inputTextTitle">
-                        <div id="msg"></div>
-                        <p class="modalTitle fw-bold">Deadline</p>
-                        <input type="date" name="date" class="form-control" id="endDate">
-                        <p class="modalTitle fw-bold">Task</p>
-                        <textarea name="textArea" class="form-control" id="textArea" cols="30" rows="5"></textarea>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-success" id="addBtn">Add</button>
-                    </div>
-                </div>
+      <!-- Modal changed to form -->
+      <form
+        class="modal fade"
+        id="form"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Add New Todo
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
-        </form>
+            <div class="modal-body">
+              <p>Todo Title</p>
+              <input type="text" class="form-control" id="textInput" />
+              <div id="msg"></div>
+              <br />
+              <p>DeadLine</p>
+              <input type="date" class="form-control" id="dateInput" />
 
-        <h5 class="todos text-center">Todo's</h5>
-        <div class="tasks"></div>
+              <br />
+              <p>Task</p>
+              <textarea
+                class="form-control"
+                id="textarea"
+                cols="30"
+                rows="5"
+              ></textarea>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-warning"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="submit" id="add" class="btn btn-danger">Add</button>
+            </div>
+          </div>
+        </div>
+      </form>
+      <h5 class="text-center my-3 fw-bolder">TODO'S</h5>
+      <div id="tasks"></div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/49a1f7fa6a.js" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/4d7408e38e.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
