@@ -55,6 +55,7 @@ header{
     gap: 3%;
     overflow-y: scroll;
     height: 320px;
+    width: 100%;
 }
 
 .tasks::-webkit-scrollbar{
@@ -80,7 +81,7 @@ header{
 }
 
 .taskText{
-    width: 80%;
+    width: 260px;
 }
 
 .options{
